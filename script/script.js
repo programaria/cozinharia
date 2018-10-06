@@ -1,6 +1,6 @@
 // submenu do header usando js puro
-var menuItem = document.getElementsByClassName("has-submenu")[0];
-var subMenu = menuItem.getElementsByClassName("submenu")[0];
+let menuItem = document.getElementsByClassName("has-submenu")[0];
+let subMenu = menuItem.getElementsByClassName("submenu")[0];
 
 // submenu do header usando jquery
 $('.has-submenu').click(function (event) {
@@ -18,17 +18,26 @@ $('.cardapio-gallery figure').mouseleave(function (event) {
 
 // navegação entre os cardapios almoço, jantar, bebidas
 $("#cardapio a").on("click", function() {
-  var $place = $(this).attr("href");
+  let $place = $(this).attr("href");
   $("#cardapio a").removeClass('active');
   $(this).addClass('active');
 
-  var top = ($place).offsetTop;
-  window.scrollTo(0, top);  
+  // chamada da ancora sem animação
+  // let top = ($place).offsetTop;
+  // window.scrollTo(0, top);
 
-
-
+  console.log(document.querySelectorAll('a[href^="#"]'))
+  document.querySelectorAll('a[href^="#"]')
+  .forEach(anchor => {
+    anchor.addEventListener('click', function(e){
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href'))
+      .scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
 });
-
 
 // // definindo os estilos pelo JS
 // menuItem.onclick = function() {

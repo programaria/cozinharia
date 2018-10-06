@@ -517,12 +517,18 @@ footer p:last-child {
 	padding-bottom: 104px;
 }
 
+#content-fixed-wrapper {
+  position: relative;
+  height: 800px;
+  overflow: auto;
+}
+
 #cardapio .content-fixed {
-	position: fixed;
-	z-index: 999;
-	top: 196px;
-	left: 5%;
-	width: 22.5%;
+  position: fixed;
+  z-index: 999;
+  top: 196px;
+  left: 5%;
+  width: 22.5%;
 }
 
 #cardapio .content-fixed nav {
@@ -540,6 +546,13 @@ footer p:last-child {
 #cardapio .content-fixed a.active {
 	font-weight: 700;
 	background: url('img/cardapio-arrow.svg') no-repeat center right;
+}
+
+.span-anchor {
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
 }
 
 #content-scroll-wrapper {
