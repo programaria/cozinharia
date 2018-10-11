@@ -507,22 +507,32 @@ footer p:last-child {
 
 #cardapio {
 	background-color: #F8F8F8;
+  /*margin-top: 300px;*/
 }
 
 #cardapio .content {
 	position: relative;
-	padding-top: 278px;
+	z-index: 1;
+  padding-top: 278px;
 	padding-bottom: 104px;
 }
 
+#content-fixed-wrapper {
+  position: relative;
+  height: 800px;
+  overflow: auto;
+}
+
 #cardapio .content-fixed {
-	position: fixed;
-	top: 196px;
-	left: 5%;
-	width: 22.5%; /* do total da pagina */
+  position: fixed;
+  z-index: 999;
+  top: 196px;
+  left: 5%;
+  width: 22.5%;
 }
 
 #cardapio .content-fixed nav {
+  position: relative;
 	margin-top: 56px;
 }
 
@@ -538,13 +548,27 @@ footer p:last-child {
 	background: url('img/cardapio-arrow.svg') no-repeat center right;
 }
 
+.span-anchor {
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
+
+#content-scroll-wrapper {
+  position: relative;
+  height: 800px;
+  overflow: auto;
+}
+
 #cardapio .content-scroll {
-	margin-left: 25%;
-	padding-top: 32px;
-	width: 75%;
-	border-left: solid 10px #efd43d;
-	background-color: white;
-	box-sizing: border-box;
+  margin-left: 25%;
+  padding-top: 32px;
+  width: 75%;
+  border-left: solid 10px #efd43d;
+  background-color: white;
+  box-sizing: border-box;
+  position: absolute;
 }
 
 #cardapio table {
