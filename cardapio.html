@@ -1,393 +1,203 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-	  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Cozinharia</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/cardapio.css" media="screen">
+    <link rel="icon" type="image/gif" href="img/favicon.png" />
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <img src="img/logo-cozinharia.svg" alt="logo Cozinharia" />
+          <nav>
 
-		<title>Cozinharia</title>
-
-		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="reset.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-
-		<!-- ****** faviconit.com favicons ****** -->
-		<link rel="shortcut icon" href="faviconit/favicon.ico">
-		<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-		<link rel="icon" type="image/png" sizes="196x196" href="faviconit/favicon-192.png">
-		<link rel="icon" type="image/png" sizes="160x160" href="faviconit/favicon-160.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="faviconit/favicon-96.png">
-		<link rel="icon" type="image/png" sizes="64x64" href="faviconit/favicon-64.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="faviconit/favicon-32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="faviconit/favicon-16.png">
-		<link rel="apple-touch-icon" href="faviconit/favicon-57.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="faviconit/favicon-114.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="faviconit/favicon-72.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="faviconit/favicon-144.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="faviconit/favicon-60.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="faviconit/favicon-120.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="faviconit/favicon-76.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="faviconit/favicon-152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="faviconit/favicon-180.png">
-		<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="faviconit/favicon-144.png">
-		<meta name="msapplication-config" content="faviconit/browserconfig.xml">
-		<!-- ****** faviconit.com favicons ****** -->
-	</head>
-	<body>
-		<header>
-      <div class="content">
-        <img src="img/logo-cozinharia.svg" alt="logo restaurante cozinharia" />
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="a-cozinharia.html">A Cozinharia</a></li>
-						<li><a href="cardapio.html" class="active">Cardápio</a></li>
-						<li class="has-submenu"><a href="#">Eventos</a>
-							<ul class="submenu">
-								<li><a href="casamentos.html">Casamentos</a></li>
-								<li><a href="empresariais.html">Empresariais</a></li>
-							</ul>
-						</li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-        </nav>
-      </div>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="a-cozinharia.html">A Cozinharia</a></li>
+              <li><a href="cardapio.html" class="active">Cardápio</a></li>
+              <li id="showMenu"><a href="#" >Eventos</a>
+                <ul class="submenu">
+                  <li><a href="casamentos.html">Casamentos</a>
+                  <li><a href="empresariais.html">Empresariais</a>
+                </ul>
+              </li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
-		<section id="cardapio">
-			<div class="content">
-				<div class="content-fixed">
-					<h1>Cardápio</h1>
-					<div class="decorate-line yellow"></div>
-					<nav>
-						<a href="#cardapio-almoco" class="active">Almoço</a>
-						<a href="#cardapio-jantar">Jantar</a>
-						<a href="#cardapio-bebidas">Bebidas</a>
-					</nav>
-				</div>
-				<div class="content-scroll">
-					<div id="cardapio-almoco">
-						<table>
-							<thead>
-								<tr>
-									<th class="title">Entradas do almoço</th>
-									<th>Inteira</th>
-									<th>Meia</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Pães integrais com mel e manteiga</td>
-									<td>R$ 20,00</td>
-									<td>R$ 15,00</td>
-								</tr>
-								<tr>
-									<td>Salada verde</td>
-									<td>R$ 16,00</td>
-									<td>R$ 12,00</td>
-								</tr>
-								<tr>
-									<td>Salada de folhas com frutas da estação</td>
-									<td>R$ 18,00</td>
-									<td>R$ 14,00</td>
-								</tr>
-								<tr>
-									<td>Folheado de queijo</td>
-									<td>R$ 18,00</td>
-									<td>R$ 14,00</td>
-								</tr>
-								<tr>
-									<td>Folheado de carne</td>
-									<td>R$ 18,00</td>
-									<td>R$ 14,00</td>
-								</tr>
-								<tr>
-									<td>Tábua de frios</td>
-									<td>R$ 20,00</td>
-									<td>R$ 15,00</td>
-								</tr>
-							</tbody>
-						</table>
 
-						<table>
-							<tr>
-								<th class="title">Pratos principais do almoço</th>
-								<th></th>
-								<th></th>
-							</tr>
-							<tr>
-								<td>Macarrão com polvo</td>
-								<td>R$ 27,00</td>
-								<td>R$ 35,00</td>
-							</tr>
-							<tr>
-								<td>Risoto de alcaparras</td>
-								<td>R$ 26,00</td>
-								<td>R$ 33,00</td>
-							</tr>
-							<tr>
-								<td>Medalhão bovino com molho de ervas</td>
-								<td>R$ 38,00</td>
-								<td>R$ 44,00</td>
-							</tr>
-						</table>
+    <section id="cardapio">
+      <div class="container">
+        <h2>Cardápio<br>
+        <div class="linha-amarela"></div>
+        </h2>
 
-						<table>
-							<tr>
-								<th class="title">Sobremesas do almoço</th>
-								<th></th>
-								<th></th>
-							</tr>
-							<tr>
-								<td>Torta holandesa</td>
-								<td>-</td>
-								<td>R$ 12,00</td>
-							</tr>
-							<tr>
-								<td>Cheesecake</td>
-								<td>-</td>
-								<td>R$ 12,00</td>
-							</tr>
-							<tr>
-								<td>Salada de frutas</td>
-								<td>-</td>
-								<td>R$ 9,00</td>
-							</tr>
-						</table>
-					</div>
+          <h3>Almoço ou jantar</h3>
+          <table>
+            <tr>
+              <th>Entradas</th>
+              <th>Inteira</th>
+              <th>Meia</th>
+            </tr>
+            <tr>
+              <td>Pães integrais com mel e manteiga</td>
+              <td>R$ 20,00</td>
+              <td>R$ 15,00</td>
+            </tr>
+            <tr>
+              <td>Salada verde</td>
+              <td>R$ 16,00</td>
+              <td>R$ 12,00</td>
+            </tr>
+            <tr>
+              <td>Salada de folhas com frutas da estação</td>
+              <td>R$ 18,00</td>
+              <td>R$ 14,00</td>
+            </tr>
 
-					<div class="cardapio-imagens">
-						<figure>
-							<img src="img/cardapio-1.jpg" alt="Uma imagem impressionante">
-							<figcaption>Legumes flambados</figcaption>
-						</figure>
-						<figure>
-							<img src="img/cardapio-2.jpg" alt="Uma imagem impressionante">
-							<figcaption>Macarrão com polvo</figcaption>
-						</figure>
-						<figure>
-							<img src="img/cardapio-3.jpg" alt="Uma imagem impressionante">
-							<figcaption>Pudim frutas vermelhas</figcaption>
-						</figure>
-					</div>
+          </table>
+          <div class="cardapio-imagens">
+            <figure>
+              <img src="img/cardapio1-pao.jpg" alt="pães deliciosos">
+              <figcaption>Pães integrais com mel e manteiga</figcaption>
+            </figure>
+            <figure>
+              <img src="img/cardapio2-salada.jpg" alt="salada verde refrescante">
+              <figcaption>Salada de folhas com frutas da estação</figcaption>
+            </figure>
+            <figure>
+              <img src="img/cardapio1-salada1.jpg" alt="salada verde refrescante">
+              <figcaption>Salada verde ao molho de iogurte</figcaption>
+            </figure>
+          </div>
 
-					<div class="" id="cardapio-jantar">
-						<table>
-							<thead>
-								<tr>
-									<th class="title">Entradas do jantar</th>
-									<th>Inteira</th>
-									<th>Meia</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Pães integrais com mel e manteiga</td>
-									<td>R$ 20,00</td>
-									<td>R$ 15,00</td>
-								</tr>
-								<tr>
-									<td>Salada verde</td>
-									<td>R$ 16,00</td>
-									<td>R$ 12,00</td>
-								</tr>
-								<tr>
-									<td>Folheado de queijo</td>
-									<td>R$ 18,00</td>
-									<td>R$ 14,00</td>
-								</tr>
-								<tr>
-									<td>Carpaccio ao molho de mostarda</td>
-									<td>R$ 22,00</td>
-									<td>R$ 27,00</td>
-								</tr>
-								<tr>
-									<td>Tábua de frios</td>
-									<td>R$ 20,00</td>
-									<td>R$ 15,00</td>
-								</tr>
-							</tbody>
-						</table>
+          <h3>Pratos principais</h3>
+          <table>
+            <tr>
+              <th></th>
+              <th>Inteira</th>
+              <th>Meia</th>
+            </tr>
+            <tr>
+              <td>Macarrão com frutos do mar ao molho</td>
+              <td>R$ 20,00</td>
+              <td>R$ 15,00</td>
+            </tr>
+            <tr>
+              <td>Spaghetti de alcaparras e alho frito</td>
+              <td>R$ 16,00</td>
+              <td>R$ 12,00</td>
+            </tr>
+            <tr>
+              <td>Pizza de pepperoni e manjericão fresco</td>
+              <td>R$ 18,00</td>
+              <td>R$ 14,00</td>
+            </tr>
 
-						<table>
-							<tr>
-								<th class="title">Pratos principais do jantar</th>
-								<th></th>
-								<th></th>
-							</tr>
-							<tr>
-								<td>Risoto de gunghi</td>
-								<td>R$ 36,00</td>
-								<td>R$ 46,00</td>
-							</tr>
-							<tr>
-								<td>Capeletti ao molho pesto</td>
-								<td>R$ 38,00</td>
-								<td>R$ 52,00</td>
-							</tr>
-							<tr>
-								<td>Filet mignon ao molho de gorgonzola</td>
-								<td>R$ 48,00</td>
-								<td>R$ 64,00</td>
-							</tr>
-						</table>
+          </table>
+          <div class="cardapio-imagens">
+            <figure>
+              <img src="img/cardapio3-massa.jpg" alt="massa deliciosa">
+              <figcaption>Macarrão com frutos do mar ao molho</figcaption>
+            </figure>
+            <figure>
+              <img src="img/cardapio4-massa.jpg" alt="salada verde refrescante">
+              <figcaption>Spaghetti de alcaparras e alho frito</figcaption>
+            </figure>
+            <figure>
+              <img src="img/cardapio5-pizza.jpg" alt="salada verde refrescante">
+              <figcaption>Pizza de pepperoni e manjericão fresco</figcaption>
+            </figure>
+          </div>
 
-						<table>
-							<tr>
-								<th class="title">Sobremesas do jantar</th>
-								<th></th>
-								<th></th>
-							</tr>
-							<tr>
-								<td>Torta de limão</td>
-								<td>-</td>
-								<td>R$ 12,00</td>
-							</tr>
-							<tr>
-								<td>Brigadeiro de colher</td>
-								<td>-</td>
-								<td>R$ 12,00</td>
-							</tr>
-							<tr>
-								<td>Creme de papaia com licor de Cassis</td>
-								<td>-</td>
-								<td>R$ 13,00</td>
-							</tr>
-						</table>
+          <h3>Sobremesas especiais</h3>
+          <table>
+            <tr>
+              <th></th>
+              <th>Inteira</th>
+              <th>Meia</th>
+            </tr>
+            <tr>
+              <td>Macarons sortidos dinamarqueses</td>
+              <td>R$ 20,00</td>
+              <td>R$ 15,00</td>
+            </tr>
+            <tr>
+              <td>Bolo surpresa com calda vermelha</td>
+              <td>R$ 16,00</td>
+              <td>R$ 12,00</td>
+            </tr>
+            <tr>
+              <td>Petit gateau de limão à la parisiense</td>
+              <td>R$ 18,00</td>
+              <td>R$ 14,00</td>
+            </tr>
 
-						<div class="cardapio-imagens">
-							<figure>
-								<img src="img/cardapio-1.jpg" alt="Uma imagem impressionante">
-								<figcaption>Legumes flambados</figcaption>
-							</figure>
-							<figure>
-								<img src="img/cardapio-2.jpg" alt="Uma imagem impressionante">
-								<figcaption>Macarrão com polvo</figcaption>
-							</figure>
-							<figure>
-								<img src="img/cardapio-3.jpg" alt="Uma imagem impressionante">
-								<figcaption>Pudim frutas vermelhas</figcaption>
-							</figure>
-						</div>
+          </table>
+          <div class="cardapio-imagens">
+            <figure>
+              <img src="img/cardapio6-macarons.jpg" alt="macarons coloridos">
+              <figcaption>Macarons sortidos dinamarqueses</figcaption>
+            </figure>
+            <figure>
+              <img src="img/cardapio7-bolo.jpg" alt="bolo com calda">
+              <figcaption>Bolo surpresa com calda vermelhao</figcaption>
+            </figure>
+            <figure>
+              <img src="img/cardapio8-petitgateau.jpg" alt="petit gateau de limão">
+              <figcaption>Petit gateau de limão à la parisiense</figcaption>
+            </figure>
+          </div>
+          <h3>Confira um pouco dos bastidores de como preparamos nossos pratos</h3>
+          <iframe width="100%" height="450" src="https://www.youtube.com/embed/hY-tjMDWH9c" frameborder="0" allowfullscreen></iframe>
 
-					</div>
+      </div>
+    </section>
 
-					<div class="" id="cardapio-bebidas">
-						<table>
-							<thead>
-								<tr>
-									<th class="title">Bebidas Não Alcoólicas</th>
-									<th>300ml</th>
-									<th>500ml</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Água</td>
-									<td>R$ 3,00</td>
-									<td>R$ 5,00</td>
-								</tr>
-								<tr>
-									<td>Água com gás</td>
-									<td>R$ 3,00</td>
-									<td>R$ 5,00</td>
-								</tr>
-								<tr>
-									<td>Refrigerante</td>
-									<td>R$ 4,00</td>
-									<td>R$ 6,00</td>
-								</tr>
-								<tr>
-									<td>Suco natural (laranja, limão, acerola, melão)</td>
-									<td>R$ 4,00</td>
-									<td>R$ 6,00</td>
-								</tr>
-							</tbody>
-						</table>
 
-						<table>
-							<tr>
-								<th class="title">Bebidas Alcoólicas</th>
-								<th>Dose</th>
-								<th>Garrafa</th>
-							</tr>
-							<tr>
-								<td>Vinho Tinto</td>
-								<td>R$ 15,00</td>
-								<td>R$ 45,00</td>
-							</tr>
-							<tr>
-								<td>Vinho Branco</td>
-								<td>R$ 14,00</td>
-								<td>R$ 42,00</td>
-							</tr>
-							<tr>
-								<td>Whisky</td>
-								<td>R$ 26,00</td>
-								<td>R$ 90,00</td>
-							</tr>
-							<tr>
-								<td>Espumante Nacional</td>
-								<td>-</td>
-								<td>R$ 43,00</td>
-							</tr>
-							<tr>
-								<td>Espumante Francês</td>
-								<td>-</td>
-								<td>R$ 63,00</td>
-							</tr>
-							<tr>
-								<td>Cerveja Artesanal</td>
-								<td>-</td>
-								<td>R$ 31,00</td>
-							</tr>
-						</table>
 
-						<div class="cardapio-imagens">
-							<figure>
-								<img src="img/cardapio-1.jpg" alt="Uma imagem impressionante">
-								<figcaption>Legumes flambados</figcaption>
-							</figure>
-							<figure>
-								<img src="img/cardapio-2.jpg" alt="Uma imagem impressionante">
-								<figcaption>Macarrão com polvo</figcaption>
-							</figure>
-							<figure>
-								<img src="img/cardapio-3.jpg" alt="Uma imagem impressionante">
-								<figcaption>Pudim frutas vermelhas</figcaption>
-							</figure>
-						</div>
+        <footer id="rodape">
+          <div class="subrodape">
+            <div class="footer">
 
-					</div>
+              <div class="rodape-endereco">
+                <p>
+                <span class="negrito">A Cozinharia</span><br>
+                Rua Frei Caneca, 920 - Consolação<br>
+                Tel: 11 4443 0324<br>
+                e-mail: contato@acozinharia.com.br
+                </p>
+              </div>
 
-				</div>
-			</div>
-		</section>
-		<footer>
-			<div class="content content-columns">
-				<div class="left">
-					<p>
-						<strong>A Cozinharia</strong>
-					</p>
-					<p>
-						Rua Frei Caneca, 920 - Consolação <br>
-						Tel: 11 4443 0324 <br>
-						e-mail: contato@acozinharia.com.br
-					</p>
-				</div>
-				<div class="right">
-					<p>
-						<strong>Horário de funcionamento:</strong>
-					</p>
-					<p>
-						Segunda a Quarta das 12h às 15h / 19h30 às 23h <br>
-						Quinta e Sexta das 12h às 15h / 19h30 às 00h <br>
-						Sábado das 12h às 00h - direto <br>
-						Domingo das 12h às 17h
-					</p>
-				</div>
-			</div>
-		</footer>
-		<script src="script/jquery-3.1.1.js"></script>
-		<script src="script/script.js"></script>
-	</body>
+              <div class="rodape-funcionamento">
+                <p><span class="negrito">Horário de funcionamento:</span> <br>
+                Segunda a Quarta das 12h às 15h / 19h30 às 23h <br>
+                Quinta e Sexta das 12h às 15h / 19h30 às 00h <br>
+                Sábado das 12h às 00h - direto <br>
+                Domingo das 12h às 17h
+              </p>
+              </div>
+
+                <div class="social">
+                  <a href="https://www.facebook.com/programaria/" target="_blank"><img src="img/facebook-01.png" alt="logo Facebook"></a>
+                  <a href="https://twitter.com/programaria" target="_blank"><img src="img/twitter-01.png" alt="logo Twitter"></a>
+                  <a href="https://www.linkedin.com/company/programaria.org" target="_blank"><img src="img/linkedin-01.png" alt="logo Linkedin"></a>
+                </div>
+            </div>
+
+          </div>
+        </div>
+        </footer>
+
+        <script src="script/jquery-3.1.1.js"></script>
+        <script src="script/script.js"></script>
+
+
+  </body>
 </html>
