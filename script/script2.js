@@ -1,0 +1,1 @@
+$(".galeria figure").mouseover(function(e){$(this).addClass("active")}),$(".galeria figure").mouseleave(function(e){$(this).removeClass("active")});
