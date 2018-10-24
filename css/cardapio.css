@@ -197,6 +197,12 @@ tr:hover{background-color:#f6fcb7}
     max-width: 548px;
     min-width: 300px;
     width: 33.3%;
+    opacity: 0.8;
+    transition: all .5s linear;
+}
+
+#cardapio .cardapio-imagens figure:hover {
+	opacity: 1;
 }
 
 #cardapio .cardapio-imagens img {

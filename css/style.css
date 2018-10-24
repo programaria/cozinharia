@@ -88,12 +88,18 @@ header nav ul {
 
 .menu ul.submenu {
 	display: none;
+	opacity: 0;
 	position: absolute;
 	left: 0;
 	list-style: none;
 	padding: 0;
 	background-color: #fff;
+	transition: all .5s linear;
+}
 
+.menu ul.submenu.active {
+	display: block;
+	opacity: 1;
 }
 
 .menu ul.submenu li {
