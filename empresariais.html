@@ -1,106 +1,85 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-	  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Cozinharia</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/empresariais.css" media="screen">
+    <link rel="icon" type="image/gif" href="img/favicon.png" />
 
-		<title>Cozinharia</title>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <img src="img/logo-cozinharia.svg" alt="logo Cozinharia" />
+          <nav>
 
-		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="reset.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-
-		<!-- ****** faviconit.com favicons ****** -->
-		<link rel="shortcut icon" href="faviconit/favicon.ico">
-		<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-		<link rel="icon" type="image/png" sizes="196x196" href="faviconit/favicon-192.png">
-		<link rel="icon" type="image/png" sizes="160x160" href="faviconit/favicon-160.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="faviconit/favicon-96.png">
-		<link rel="icon" type="image/png" sizes="64x64" href="faviconit/favicon-64.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="faviconit/favicon-32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="faviconit/favicon-16.png">
-		<link rel="apple-touch-icon" href="faviconit/favicon-57.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="faviconit/favicon-114.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="faviconit/favicon-72.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="faviconit/favicon-144.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="faviconit/favicon-60.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="faviconit/favicon-120.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="faviconit/favicon-76.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="faviconit/favicon-152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="faviconit/favicon-180.png">
-		<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="faviconit/favicon-144.png">
-		<meta name="msapplication-config" content="faviconit/browserconfig.xml">
-		<!-- ****** faviconit.com favicons ****** -->
-	</head>
-	<body>
-		<header>
-      <div class="content">
-        <img src="img/logo-cozinharia.svg" alt="logo restaurante cozinharia" />
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="a-cozinharia.html">A Cozinharia</a></li>
-						<li><a href="cardapio.html">Cardápio</a></li>
-						<li class="has-submenu"><a href="#"  class="active">Eventos</a>
-							<ul class="submenu">
-								<li><a href="casamentos.html">Casamentos</a></li>
-								<li><a href="empresariais.html">Empresariais</a></li>
-							</ul>
-						</li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-        </nav>
-      </div>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="a-cozinharia.html">A Cozinharia</a></li>
+              <li><a href="cardapio.html">Cardápio</a></li>
+              <li id="showMenu"><a href="#" class="active">Eventos</a>
+                <ul class="submenu">
+                  <li><a href="casamentos.html">Casamentos</a>
+                  <li><a href="empresariais.html">Empresariais</a>
+                </ul>
+              </li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
-    <section class="eventos">
-			<div class="content">
-				<h1>Empresariais</h1>
-				<div class="decorate-line yellow"></div>
-				<p class="narrow">
-					Faça seu evento corporativo conosco e surpreenda seus clientes e fornecedores ! Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Nulla vitae elit libero. Veja só:
-				</p>
-				<figure class="content-columns">
-				  <img src="img/empresariais-1.jpg" alt="imagem do evento empresarial" />
-				  <figcaption>Wifi e mesas de trabalho inclusos</figcaption>
-			  </figure>
-			  <figure class="content-columns">
-			    <img src="img/empresariais-2.jpg" alt="imagem do evento empresarial" />
-			    <figcaption>Sala de reunião com capacidade para até 30 pessoas!</figcaption>
-		    </figure>
-		    <figure class="content-columns">
-			    <img src="img/empresariais-3.jpg" alt="imagem do evento empresarial" />
-			    <figcaption>Área externa para eventos que necessitam de ar livre</figcaption>
-		    </figure>
-			</div>
-		</section>
-		
-		<footer>
-			<div class="content content-columns">
-				<div class="left">
-					<p>
-						<strong>A Cozinharia</strong>
-					</p>
-					<p>
-						Rua Frei Caneca, 920 - Consolação <br>
-						Tel: 11 4443 0324 <br>
-						e-mail: contato@acozinharia.com.br
-					</p>
-				</div>
-				<div class="right">
-					<p>
-						<strong>Horário de funcionamento:</strong>
-					</p>
-					<p>
-						Segunda a Quarta das 12h às 15h / 19h30 às 23h <br>
-						Quinta e Sexta das 12h às 15h / 19h30 às 00h <br>
-						Sábado das 12h às 00h - direto <br>
-						Domingo das 12h às 17h
-					</p>
-				</div>
-			</div>
-		</footer>
-		<script src="script/jquery-3.1.1.js"></script>
-		<script src="script/script.js"></script>
-	</body>
+
+    <section id="empreender">
+      <div class="container">
+        <h2>Empresariais</h2>
+        <div class="linha-amarela"></div>
+        <p>Faça seu evento corporativo conosco e surpreenda seus clientes e fornecedores ! Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Nulla vitae elit libero. Veja só:</p>
+        <img src="img/empresariais-1.jpg" alt="homem trabalhando">
+        <img src="img/empresariais-2.jpg" alt="sala de reunião">
+        <img src="img/empresariais-3.jpg" alt="funcionários em momento descontraido">
+      </div>
+    </section>
+
+
+
+        <footer id="rodape">
+          <div class="container">
+
+            <div class="rodape-endereco">
+              <p>
+              <span class="negrito">A Cozinharia</span><br>
+              Rua Frei Caneca, 920 - Consolação<br>
+              Tel: 11 4443 0324<br>
+              e-mail: contato@acozinharia.com.br
+              </p>
+            </div>
+
+            <div class="rodape-funcionamento">
+              <p><span class="negrito">Horário de funcionamento:</span> <br>
+              Segunda a Quarta das 12h às 15h / 19h30 às 23h <br>
+              Quinta e Sexta das 12h às 15h / 19h30 às 00h <br>
+              Sábado das 12h às 00h - direto <br>
+              Domingo das 12h às 17h
+            </p>
+            </div>
+
+              <div class="social">
+                <a href="https://www.facebook.com/programaria/" target="_blank"><img src="img/facebook-01.png" alt="logo Facebook"></a>
+                <a href="https://twitter.com/programaria" target="_blank"><img src="img/twitter-01.png" alt="logo Twitter"></a>
+                <a href="https://www.linkedin.com/company/programaria.org" target="_blank"><img src="img/linkedin-01.png" alt="logo Linkedin"></a>
+              </div>
+          </div>
+
+
+        </footer>
+
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/script.js"></script>
+
+
+  </body>
 </html>
