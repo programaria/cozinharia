@@ -28,9 +28,9 @@ body {
 		padding: 20px 0;
 	}
 
-	@media screen and (max-width: 800px)
-header nav ul {
-    display: none;
+@media screen and (max-width: 800px) {
+	header nav ul {
+    	display: none;
 	}
 
 	ol, ul {
@@ -57,6 +57,7 @@ header nav ul {
 
 	header nav > ul li {
 	position: relative;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -81,10 +82,8 @@ header nav ul {
 
 	header nav ul li a.active {
 		border-bottom: 3px solid #EED33E;
-		/*bottom: 60px;*/
-	}
 
-/** submenu **/
+	}
 
 /** submenu **/
 

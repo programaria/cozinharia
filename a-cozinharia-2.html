@@ -7,6 +7,7 @@
     <title>Cozinharia</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" media="screen">
+    
     <link rel="stylesheet" href="css/reset.css" media="screen">
     <link rel="stylesheet" href="css/a-cozinharia.css" media="screen">
     <link rel="stylesheet" href="css/lightbox.css" media="screen">
@@ -19,13 +20,13 @@
           <img src="img/logo-cozinharia.svg" alt="logo Cozinharia" />
           <nav>
             <ul class="menu">
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="a-cozinharia.html">A Cozinharia</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="a-cozinharia.html" class="active">A Cozinharia</a></li>
               <li><a href="cardapio.html">Cardápio</a></li>
-              <li id="showMenu"><a href="#">Eventos</a>
+              <li class="has-submenu"><a href="//htmlpreview.github.io/?https://github.com/programaria/cozinharia/blob/master/index.html#">Eventos</a>
                 <ul class="submenu">
-                  <li><a href="casamentos.html">Casamentos</a>
-                  <li><a href="empresariais.html">Empresariais</a>
+                  <li><a href="//htmlpreview.github.io/?https://raw.githubusercontent.com/programaria/cozinharia/master/casamentos.html">Casamentos</a></li>
+                  <li><a href="//htmlpreview.github.io/?https://raw.githubusercontent.com/programaria/cozinharia/master/empresariais.html">Empresariais</a></li>
                 </ul>
               </li>
               <li><a href="contato.html">Contato</a></li>
@@ -69,11 +70,14 @@
         <h2>Galeria de fotos</h2>
 
         <div class="sessao-galeria">
-          <a href="Javascript:void(0)"><img src="img/cardapio-1-s.jpg" alt="foto de um prato delicioso"></a>
-          <a href="Javascript:void(0)"><img src="img/cardapio-2-s.jpg" alt="foto de um prato delicioso"></a>
-          <a href="Javascript:void(0)"><img src="img/cardapio-3-s.jpg" alt="foto de um prato delicioso"></a>
-          <a href="Javascript:void(0)"><img src="img/cardapio-4-s.jpg" alt="foto de um prato delicioso"></a>
-          <a href="Javascript:void(0)"><img src="img/cardapio-5-s.jpg" alt="foto de um prato delicioso"></a>
+          <a href="img/cardapio-1.jpg" data-lightbox="a-galeria" data-title="Legumes flambados"><img src="img/cardapio-1-s.jpg" alt="foto de um prato delicioso"></a>
+          <a href="img/cardapio-2.jpg" data-lightbox="a-galeria" data-title="Macarrão com polvo"><img src="img/cardapio-2-s.jpg" alt="foto de um prato delicioso"></a>
+          <a href="img/cardapio-3.jpg" data-lightbox="a-galeria" data-title="Pudim frutas vermelhas"><img src="img/cardapio-3-s.jpg" alt="foto de um prato delicioso"></a>
+          <a href="img/cardapio-4.jpg" data-lightbox="a-galeria" data-title="Martini moonlight"><img src="img/cardapio-4-s.jpg" alt="foto de um prato delicioso"></a>
+          <a href="img/cardapio-5.jpg" data-lightbox="a-galeria" data-title="Risoto de cenoura"><img src="img/cardapio-5-s.jpg" alt="foto de um prato delicioso"></a>
+          <a href="img/cardapio-6.jpg" data-lightbox="a-galeria" data-title="Frutas com grãos"><img src="img/cardapio-6-s.jpg" alt="foto de um prato delicioso"></a>
+          <!-- <a href="img/cardapio-7.jpg" class="foto-pequena"><img src="img/cardapio-7-s.jpg" alt="foto de um prato delicioso"></a> -->
+
         </div>
     </div>
     </section>
@@ -111,6 +115,7 @@
 
         <script src="script/jquery-3.1.1.js"></script>
         <script src="script/script.js"></script>
+         <script src="script/lightbox.min.js" type="text/javascript"></script>
 
   </body>
 </html>

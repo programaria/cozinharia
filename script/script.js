@@ -2,9 +2,6 @@
 // $('#showMenu').click(function (event) {
 //   $('.submenu').fadeIn();
 // });
-// submenu do header usando js puro
-let menuItem = document.getElementsByClassName("has-submenu")[0];
-let subMenu = menuItem.getElementsByClassName("submenu")[0];
 
 //submenu do header usando vanilla
 
